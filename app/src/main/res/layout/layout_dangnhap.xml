@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/colorGreenButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/txtDangNhap"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:text="@string/dangnhap"
+        android:layout_above="@+id/lnKhungDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_alignEnd="@+id/lnKhungDangNhap"
+        android:layout_alignRight="@id/txtDangNhap"
+        android:layout_above="@+id/lnKhungDangNhap"
+        android:src="@drawable/logodangnhap"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingRight="0dp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp" />
+
+    <LinearLayout
+
+        android:id="@+id/lnKhungDangNhap"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTenDN"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/user"
+            android:textColorHint="@color/grayColor"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/whiteColor"
+            android:hint="@string/tendangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:password="true"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/password"
+            android:textColorHint="@color/grayColor"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/whiteColor"
+            android:hint="@string/matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/redColor"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:text="@string/dongy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:text="@string/dangky"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

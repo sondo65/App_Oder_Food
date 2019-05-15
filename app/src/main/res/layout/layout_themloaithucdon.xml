@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtTenLoaiThucDon"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/themloaithucdon"
+        android:textColorHint="@color/grayColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnLoaiThucDon"
+        android:background="@color/colorOrangeButton"
+        android:layout_below="@+id/edtTenLoaiThucDon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

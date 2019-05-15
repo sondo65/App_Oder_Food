@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sondo.app_order_food">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logodangnhap"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity.DangNhapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity.DangKyActivity"/>
+        <activity android:name=".MainActivity.TrangChuActivity"/>
+        <activity android:name=".MainActivity.ThemBanAnActivity"
+                  android:theme="@style/PopUp_ThemBanAn"/>
+        <activity android:name=".MainActivity.ThemThucDonActivity"/>
+
+        <activity android:name=".MainActivity.ThemLoaiThucDonActivity"
+            android:theme="@style/PopUp_ThemBanAn" />
+
+        <activity android:name=".MainActivity.NhapSoLuongMonAnActivity"
+            android:theme="@style/PopUp_ThemBanAn"/>
+
+        <activity android:name=".MainActivity.ThanhToanActivity"/>
+        <activity android:name=".MainActivity.SuaBanAnActivity"
+            android:theme="@style/PopUp_ThemBanAn"/>
+        <activity android:name=".MainActivity.XacNhanXoaActivity"
+            android:theme="@style/PopUp_ThemBanAn"/>
+        <activity android:name=".MainActivity.SuaThucDonActivity"
+            android:theme="@style/PopUp_ThemBanAn"/>
+        <activity android:name=".MainActivity.XacNhanXoaThucDon"
+            android:theme="@style/PopUp_ThemBanAn"/>
+        </application>
+
+</manifest>
